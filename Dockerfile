@@ -5,7 +5,7 @@ RUN apk add --no-cache \
   git \
   zip 
 
-ENV TERRAFORM_VERSION 0.12.10
+ENV TERRAFORM_VERSION 0.12.12
 
 RUN wget -O terraform.zip https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_linux_amd64.zip && \
   unzip terraform.zip -d /usr/local/bin && \
