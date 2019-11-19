@@ -1,6 +1,9 @@
 FROM node:11-alpine
 
 RUN apk add --no-cache \
+  python \
+  py-pip \
+  py-setuptools \
   bash \
   git \
   zip \
