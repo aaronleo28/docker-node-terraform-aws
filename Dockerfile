@@ -3,7 +3,8 @@ FROM node:11-alpine
 RUN apk add --no-cache \
   bash \
   git \
-  zip 
+  zip \
+  pip install --no-cache-dir --upgrade pip awscli
 
 ENV TERRAFORM_VERSION 0.12.12
 
