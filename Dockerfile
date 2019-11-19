@@ -6,7 +6,7 @@ RUN apk add --no-cache \
   py-setuptools \
   bash \
   git \
-  zip \
+  zip && \
   pip install --no-cache-dir --upgrade pip awscli
 
 ENV TERRAFORM_VERSION 0.12.12
