@@ -6,6 +6,7 @@ RUN apk add --no-cache \
   py-setuptools \
   bash \
   git \
+  coreutils \
   zip && \
   pip install --no-cache-dir --upgrade pip awscli
 
