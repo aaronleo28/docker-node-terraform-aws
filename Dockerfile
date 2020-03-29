@@ -1,11 +1,12 @@
 FROM node:11-alpine
 
-RUN apk add --no-cache \
+RUN apk add --no-cache --no-progress --update \
   python \
   py-pip \
   py-setuptools \
   bash \
   git \
+  openssh-client \
   coreutils \
   zip && \
   pip install --no-cache-dir --upgrade pip awscli
